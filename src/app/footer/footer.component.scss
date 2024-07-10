@@ -1,0 +1,31 @@
+.footer-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: #9888f2;
+    color: white;
+    font-family: "Murecho", serif;
+    font-size: 16px;
+}
+  
+.footer-container span {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.footer-container span:hover {
+    color: #673ab7;
+}
+
+/* Styles for mobile */
+@media (max-width: 600px) {
+    .footer-container  {
+      height: auto; /* Auto height for mobile */
+      flex-direction: column; /* Arrange items vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding: 16px; /* Adjust padding for mobile */
+    }  
+}

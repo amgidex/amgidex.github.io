@@ -1,0 +1,128 @@
+.frontpage-background {
+    background-image: var(--url-abstract2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.frontpage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    max-width: 1200px;
+    position: relative;
+    z-index: 1;
+    color: #000;
+    gap: 32px;
+}
+
+.frontpage-h1 {
+    color: #333;
+    font-size: 3.2em;
+    font-weight: 400;
+}
+
+.frontpage-h3 {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rounded-corners {
+    margin: 2px 12px;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 24px;
+}
+  
+.button-gradient {
+    color: #fff;
+    background-color: #9888f2;
+    // font-weight: 500;
+}
+
+.img-container {
+    // width: 900px; /* Adjust the width of your div */
+    height: auto; /* Adjust the height of your div */
+    overflow: hidden; /* Hides any part of the image exceeding the div */
+    background-color: rgb(80, 80, 80);
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 12px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-section:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .translist-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 8px
+  }
+  
+  .translist {
+    padding: 4px 8px; 
+    border-radius: 12.5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    background-color: #9888f2;
+    letter-spacing: 0.7px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .img-container {
+        width: 100%; /* Set the width to 100% for smaller screens */
+        padding: 4px;
+    }
+
+    .feature-section {
+        flex-wrap: wrap;
+    }
+}
